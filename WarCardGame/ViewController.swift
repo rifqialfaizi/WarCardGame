@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         }
      
         // Hallo apakah ini sudah masuk ke GitHub?
-        
+        // Tentu Saja!
     }
     
     
