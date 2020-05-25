@@ -16,15 +16,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerScore: UILabel!
     @IBOutlet weak var cpuScore: UILabel!
     
+    @IBOutlet weak var pointResult: UILabel!
+    
     var playerScr = 0
     var cpuScr = 0
+    var pointRslt = ""
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func dealBtnTapped(_ sender: Any) {
+        
         
         // Declare random number
         
@@ -42,6 +47,12 @@ class ViewController: UIViewController {
             playerScr += 1
             
             playerScore.text = String(playerScr)
+            
+            pointRslt = "Point For Player!"
+            
+            pointResult.text = String(pointRslt)
+            
+            
        
         }
         if leftNumber < rightNumber {
@@ -49,23 +60,46 @@ class ViewController: UIViewController {
             cpuScr += 1
             
             cpuScore.text = String(cpuScr)
+            
+            pointRslt = "Point for CPU!"
+            
+            pointResult.text = String(pointRslt)
+   
+        } else {
+            
+            pointRslt = "DRAW!"
+            
+            pointResult.text = String(pointRslt)
         }
     
         if playerScr >= 10 {
            
-            print("PLAYER WIN")
+            pointRslt = "Player WIN!"
+            pointResult.text = String(pointRslt)
+            
             
         } else if cpuScr >= 10 {
             
-            print("CPU WIN")
+            pointRslt = "CPU WIN!"
+            pointResult.text = String(pointRslt)
+            
         }
-     
-        // Hallo apakah ini sudah masuk ke GitHub?
-        // Tentu Saja!
         
-        // Test kedua
     }
     
+    @IBAction func resetBtnPressed(_ sender: Any) {
+        
+        playerScr = 0
+        cpuScr = 0
+        
+        playerScore.text = String(playerScr)
+        cpuScore.text = String(cpuScr)
+        
+        pointRslt = "Score Was Reset!"
+        pointResult.text = String(pointRslt)
+        
+        print("Reset score was successful")
+    }
     
 }
 

@@ -81,18 +81,37 @@
                                     <action selector="dealBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Xc-aJ-caW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPT-VW-wgd">
+                                <rect key="frame" x="168" y="617" width="39" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vqw-4F-pBW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Point Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-Lr-egB">
+                                <rect key="frame" x="142" y="177" width="91" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="szL-Lf-A4D" secondAttribute="bottom" id="0kX-eP-lYi"/>
                             <constraint firstItem="goj-VW-rt9" firstAttribute="top" secondItem="QIP-S4-OeI" secondAttribute="bottom" constant="50" id="69H-do-gdm"/>
+                            <constraint firstItem="pPT-VW-wgd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D8M-cJ-Ryg"/>
                             <constraint firstItem="pUV-ok-DWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="EDu-ru-iBC"/>
                             <constraint firstItem="goj-VW-rt9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H48-gY-KPj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Dr-OY-yap" secondAttribute="trailing" constant="20" id="Mdh-IF-8oo"/>
+                            <constraint firstItem="rXJ-Lr-egB" firstAttribute="top" secondItem="9FX-HX-Ukb" secondAttribute="bottom" constant="40" id="Sne-JO-5XQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Dr-OY-yap" secondAttribute="bottom" constant="60" id="T2E-sf-j25"/>
                             <constraint firstItem="szL-Lf-A4D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X4V-WF-Y3j"/>
                             <constraint firstItem="szL-Lf-A4D" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xgh-FH-4T1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pPT-VW-wgd" secondAttribute="bottom" constant="20" id="a0E-LS-cqS"/>
                             <constraint firstItem="QIP-S4-OeI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bcA-V3-S0b"/>
+                            <constraint firstItem="rXJ-Lr-egB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2r-wb-FPz"/>
                             <constraint firstItem="9FX-HX-Ukb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="faz-W9-m13"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pUV-ok-DWw" secondAttribute="bottom" constant="60" id="fbz-pB-ZOe"/>
                             <constraint firstItem="QIP-S4-OeI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o4b-zI-wDr"/>
@@ -106,6 +125,7 @@
                         <outlet property="cpuScore" destination="XFR-ag-VmY" id="DMu-Vs-Hcd"/>
                         <outlet property="playerCard" destination="kaA-68-qbt" id="bN4-qJ-wnY"/>
                         <outlet property="playerScore" destination="1dB-jt-PvN" id="dJY-QF-ug0"/>
+                        <outlet property="pointResult" destination="rXJ-Lr-egB" id="saY-PP-uyP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
