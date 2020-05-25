@@ -89,6 +89,9 @@ class ViewController: UIViewController {
     
     @IBAction func resetBtnPressed(_ sender: Any) {
         
+        playerCard.image = UIImage(named: "back")
+        cpuCard.image = UIImage(named: "back")
+        
         playerScr = 0
         cpuScr = 0
         
